@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to sign in.</p>
+
+<div class="row">
+    <div class="col">
+        <form asp-action="SignIn" method="POST">
+            <input type="hidden" name="scheme" value="OrgA" />
+            <button type="submit" class="btn btn-primary">Login with Organisation A</button>
+        </form>
+    </div>
+    <div class="col">
+        <form asp-action="SignIn" method="POST">
+            <input type="hidden" name="scheme" value="OrgB" />
+            <button type="submit" class="btn btn-primary">Login with Organisation B</button>
+        </form>
+    </div>
+</div>
+
